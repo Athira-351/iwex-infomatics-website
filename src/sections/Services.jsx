@@ -69,7 +69,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="relative min-h-screen bg-gradient-to-b from-[#0A1F44] to-[#00172F] flex items-center justify-center overflow-hidden px-4"
+      className="relative min-h-screen bg-gradient-to-b from-[#0A1F44] to-[#00172F] flex items-center justify-center overflow-hidden px-4 py-8 sm:py-0"
     >
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <svg
@@ -102,9 +102,11 @@ const Services = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 bg-gradient-to-r from-teal-300 via-cyan-400 to-teal-300 bg-clip-text text-transparent animate-gradient">
-          Our Core Services
+          Our Services
         </h2>
 
+      {/* Desktop Slider */}
+      <div className="hidden sm:block">
         <Slider {...settings}>
           {services.map((service, index) => (
             <div key={index} className="px-3">
@@ -114,12 +116,25 @@ const Services = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-teal-300 mb-3">{service.title}</h3>
                 <p className="text-teal-200 text-base leading-7">{service.desc}</p>
-                {/* Glow effect */}
                 <div className="absolute inset-0 rounded-2xl border border-blue-900 opacity-0 group-hover:opacity-30 transition-opacity pointer-events-none"></div>
               </div>
             </div>
           ))}
         </Slider>
+        </div>
+
+        {/* Mobile Vertical List */}
+        <div className="flex flex-col space-y-6 sm:hidden">
+          {services.map((service, index) => (
+            <div key={index} className="group relative bg-[#09203F]/80 backdrop-blur-md border border-teal-700 rounded-2xl p-6 shadow-lg flex flex-col items-center text-center">
+              <div className="mb-4 animate-float-rotate">{service.icon}</div>
+              <h3 className="text-lg font-semibold text-teal-300 mb-2">{service.title}</h3>
+              <p className="text-teal-200 text-sm leading-6">{service.desc}</p>
+              <div className="absolute inset-0 rounded-2xl border border-blue-900 opacity-0 group-hover:opacity-30 transition-opacity pointer-events-none"></div>
+            </div>
+          ))}
+        </div>
+
         <div className="mt-18 flex justify-center">
           <a
             href="#contact"

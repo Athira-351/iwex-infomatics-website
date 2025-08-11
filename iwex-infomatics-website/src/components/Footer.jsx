@@ -29,11 +29,10 @@ const Footer = () => {
               "Contact Us",
               "Enquiry",
               "Tickets",
-              "Privacy Policy",
-              "FAQ",
               "Blogs",
-              "Login",
-              "Get a Free Demo",
+              "FAQ",
+              "Privacy Policy",
+              "Terms of Service",
             ].map((link) => (
               <li key={link}>
                 <a href="#" className="hover:text-white transition-colors duration-200">{link}</a>
@@ -75,7 +74,7 @@ const Footer = () => {
             <li className="flex items-center gap-4">
               <FaPhoneAlt className="text-blue-500 text-lg" />
               <span className="select-text">
-                +91-9744783338
+                +91-97447 83338
               </span>
             </li>
             <li className="flex items-center gap-4">
@@ -86,7 +85,7 @@ const Footer = () => {
             </li>
             <li className="flex items-center gap-4">
               <FaTelegramPlane className="text-sky-500 text-lg" />
-              <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+              <a href="https://t.me/m/BpwakcWkMTk1" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
                 Telegram
               </a>
             </li>
