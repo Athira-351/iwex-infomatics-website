@@ -39,8 +39,7 @@ const Hero = () => {
           }
         `}
       </style>
-
-      <section id="hero" className="relative h-screen w-full overflow-hidden flex items-center justify-center">
+      <section id="hero" className="relative h-screen w-full overflow-hidden flex items-center justify-center pt-100 md:pt-0 overflow-x-hidden">
         <div
           className="absolute inset-0 z-0 bg-cover bg-center animate-panImage"
           style={{
@@ -88,8 +87,8 @@ const Hero = () => {
               <motion.div
                 key={index}
                 className={`tracking-widest ${index === activeIndex
-                    ? "text-blue-400 scale-110 text-2xl lg:text-3xl font-bold"
-                    : "text-gray-400 text-lg lg:text-xl"
+                  ? "text-blue-400 scale-110 text-2xl lg:text-3xl font-bold"
+                  : "text-gray-400 text-lg lg:text-xl"
                   }`}
                 animate={
                   index === activeIndex

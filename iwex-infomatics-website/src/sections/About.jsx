@@ -4,9 +4,9 @@ import ErpImg from "../assets/erpimage.jpg"
 
 const About = () => {
   return (
-    <section id="about" className="h-screen sticky top-0 flex items-center"
-              style={{ background: "linear-gradient(180deg, #ffffff 0%, #ffffff 100%)", }}>
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section id="about" className="md:h-screen sticky top-0 flex items-center"
+      style={{ background: "linear-gradient(180deg, #ffffff 0%, #ffffff 100%)", }}>
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-12 mb-12 md:mt-0 md:mb-0">
         
         {/* Image Side */}
         <motion.div
@@ -35,11 +35,11 @@ const About = () => {
           transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
           viewport={{ once: true }}
         ><motion.h2
-            className="text-4xl lg:text-5xl font-extrabold text-blue-900 mb-6"
-            initial={{ opacity: 0, y: -50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >About <span className="text-blue-500">iWEX Infomatics</span>
+          className="text-4xl lg:text-5xl font-extrabold text-blue-900 mb-6"
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >About <span className="text-blue-500">iWEX Infomatics</span>
           </motion.h2>
           <motion.p
             className="text-lg text-gray-600 leading-relaxed mb-6"

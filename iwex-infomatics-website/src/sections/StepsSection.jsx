@@ -73,7 +73,7 @@ const steps = [
 
 const StepsSection = () => {
   return (
-    <section className="bg-white py-20 px-6 md:px-20">
+    <section className="bg-white py-20 px-6 md:px-20 overflow-x-hidden">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-extrabold text-blue-950 mb-16 text-center tracking-tight">How to Approach Us</h2>
         <div className="relative">

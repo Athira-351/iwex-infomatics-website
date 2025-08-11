@@ -5,10 +5,10 @@ import About from "./About";
 const StickySection = () => {
   return (
     <div className="relative">
-      <div className="h-screen sticky top-0">
+      <div className="sticky top-0 h-[100vh] md:h-screen">
         <Hero />
       </div>
-      <div className="h-screen">
+      <div className="md:h-screen">
         <About />
       </div>
     </div>

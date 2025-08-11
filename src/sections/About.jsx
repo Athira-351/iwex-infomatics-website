@@ -4,9 +4,9 @@ import ErpImg from "../assets/erpimage.jpg"
 
 const About = () => {
   return (
-    <section id="about" className="h-screen sticky top-0 flex items-center"
-              style={{ background: "linear-gradient(180deg, #ffffff 0%, #ffffff 100%)", }}>
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section id="about" className="md:h-screen sticky top-0 flex items-center"
+      style={{ background: "linear-gradient(180deg, #ffffff 0%, #ffffff 100%)", }}>
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-12 mb-12 md:mt-0 md:mb-0">
         
         {/* Image Side */}
         <motion.div
