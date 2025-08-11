@@ -39,7 +39,8 @@ const Hero = () => {
           }
         `}
       </style>
-    <section id="hero" className="relative h-screen w-full overflow-hidden flex items-center justify-center pt-100 md:pt-0 overflow-x-hidden">        <div
+    <section id="hero" className="relative h-screen w-full overflow-hidden flex items-center justify-center pt-100 md:pt-0 overflow-x-hidden">
+        <div
           className="absolute inset-0 z-0 bg-cover bg-center animate-panImage"
           style={{
             backgroundImage:
